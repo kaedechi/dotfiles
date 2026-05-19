@@ -3,7 +3,6 @@ local fileManager = "kitty -e --class ranger ranger"
 local menu = "hyprlauncher"
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
--- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
@@ -42,10 +41,8 @@ hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 hl.on("hyprland.start", function ()
-        -- hl.exec_cmd(terminal)
          hl.exec_cmd("chatterino")
          hl.exec_cmd("waybar")
-        hl.exec_cmd("awww-daemon")
 	hl.exec_cmd("gentoo-pipewire-launcher &")
 	hl.exec_cmd("swaybg -i  Pictures/1692049837128505.png")
 end)
