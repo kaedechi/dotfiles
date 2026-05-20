@@ -1,0 +1,33 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+
+  "modules-left": [
+    "hyprland/window"
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "clock"
+  ],
+
+"hyprland/window": {
+  "format": "{class}",
+  "rewrite": {
+    "firefox-bin": "Firefox"
+  },
+  "separate-outputs": true
+},
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate"
+  },
+
+  "clock": {
+    "format": "{:%d.%m  %H:%M}"
+  }
+}

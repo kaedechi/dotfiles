@@ -1,0 +1,43 @@
+* {
+  border: none;
+  border-radius: 0;
+
+  font-family: "Tamzen";
+  font-size: 15px;
+
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(15, 15, 15, 0.55);
+  color: #e0e0e0;
+
+  border-radius: 8px;
+  margin: 6px;
+}
+
+#window,
+#clock {
+  padding: 0 10px;
+}
+
+#workspaces {
+  padding: 0 4px;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  margin: 4px 2px;
+
+  background: transparent;
+  color: #888888;
+}
+
+#workspaces button.active {
+  color: #ffffff;
+
+}
+
+#workspaces button:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
