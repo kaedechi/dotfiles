@@ -1,6 +1,6 @@
 local terminal = "kitty"
 local fileManager = "kitty -e --class ranger ranger"
-local menu = "hyprlauncher"
+local menu = "wofi"
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
@@ -20,6 +20,7 @@ hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
+hl.bind("  Print", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do
@@ -42,7 +43,7 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 hl.on("hyprland.start", function ()
          hl.exec_cmd("chatterino")
-         hl.exec_cmd("waybar")
-	hl.exec_cmd("gentoo-pipewire-launcher &")
-	hl.exec_cmd("swaybg -i  Pictures/1692049837128505.png")
+--         hl.exec_cmd("waybar")
+	hl.exec_cmd("awww-daemon & awww img ~Pictures/1.png")
+	hl.exec_cmd("wal -i ~Pictures/1.png")
 end)
