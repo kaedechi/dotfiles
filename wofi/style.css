@@ -1,4 +1,65 @@
-@import ".cache/wal/colors-waybar.css";
+*{
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+window {
+  font-size: 14px;
+  font-family: "JetBrains Mono";
+  background-color: #151515;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+#outer-box {
+  margin: 10px 10px 20px 10px;
+  background-color: #151515;
+  opacity: 0.90;
+}
+
+#inner-box {
+  margin: 10px;
+  background-color: #151515;
+  opacity: 0.9;
+}
+
+#entry {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+#entry #text {
+  padding: 0px 0px 0px 10px;
+  font-weight: normal;
+  color: #E8E3E3;
+}
+
+#entry:selected {
+  background-color: #B66467;
+}
+
+#entry:selected #text {
+  padding: 0px 0px 0px 10px;
+  font-weight: normal;
+  color: #151515;
+}
+
+#input {
+  background: transparent;
+  margin: 0px 5px 0px 20px;
+  color: #E8E3E3;
+  padding: 5px;
+}
+
+#image {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#scroll {
+  margin: 0px;
+}@import ".cache/wal/colors-waybar.css";
 
 
 *{
