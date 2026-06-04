@@ -52,7 +52,9 @@ hl.window_rule({
     },
     size = { 800, 450 },
     float = true,
+    pin = true,
     content = "video",
+    opacity = "1.0 1.0"
 })
 hl.window_rule({
 name = "Steam",
@@ -68,3 +70,5 @@ hl.window_rule({
     },
     float = true,
 })
+--hl.window_rule({ match = { float = true },           opacity = "0.5 0.5" })
+hl.window_rule({ match = { class = "kitty" },        opacity = "0.8 0.8" })
