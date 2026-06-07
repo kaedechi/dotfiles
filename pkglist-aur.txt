@@ -2,5 +2,3 @@ chatterino2-bin
 firefox-bin
 maplemono-ttf
 vesktop-bin
-yay
-yay-debug
