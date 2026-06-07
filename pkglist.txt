@@ -39,7 +39,6 @@ pavucontrol
 pipewire
 pipewire-alsa
 pipewire-jack
-pulseaudio
 python-pillow
 ranger
 slurp
