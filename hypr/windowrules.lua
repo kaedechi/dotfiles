@@ -43,7 +43,7 @@ name = "Discord",
 match = {
 class = "vesktop"
 },
-workspace = 2
+workspace = "2 silent"
 })
 hl.window_rule({
     name = "PiP",
@@ -61,7 +61,7 @@ name = "Steam",
 match = {
 class = "steam"
 },
-workspace = 2
+workspace = "3 silent"
 })
 hl.window_rule({
     name = "ranger",
@@ -70,5 +70,16 @@ hl.window_rule({
     },
     float = true,
 })
+hl.window_rule({
+	name = "runelite",
+	match = { 
+	class = "net-runelite-client-RuneLite",
+},
+	float = true,
+	workspace = "1 silent",
+
+	size = {806, 548},
+})
+
 --hl.window_rule({ match = { float = true },           opacity = "0.5 0.5" })
 hl.window_rule({ match = { class = "kitty" },        opacity = "0.8 0.8" })
