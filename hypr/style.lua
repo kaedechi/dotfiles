@@ -1,14 +1,14 @@
 
 hl.config({
     general = {
-        gaps_in  = 5,
-        gaps_out = 5,
+        gaps_in  = 2,
+        gaps_out = 2,
 
-        border_size = 2,
+        border_size = 1,
 
         col = {
-            active_border   = { colors = {"rgba(644382d1)", "rgba(644382d1)"}, angle = 45 },
-           inactive_border = "rgba(35274be6)",
+active_border = { colors = {"rgb(A1A1A1)", "rgb(ECECEC)"}, agnle = 45 }, 
+	    inactive_border = "rgb(161616)",
        },
 
         resize_on_border = false,
@@ -95,7 +95,7 @@ hl.config({
 
 hl.config({
     misc = {
-        force_default_wallpaper = -0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
+        force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
         disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
     },
 })
