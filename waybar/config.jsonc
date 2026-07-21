@@ -2,6 +2,9 @@
   "layer": "top",
   "position": "top",
   "height": 28,
+  "include": [
+    "./modules/tray.jsonc"
+  ],
 
   "modules-left": [
     "hyprland/window"
@@ -12,7 +15,8 @@
   ],
 
   "modules-right": [
-    "clock"
+    "clock",
+    "tray"
   ],
 
 "hyprland/window": {
