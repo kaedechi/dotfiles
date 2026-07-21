@@ -1,0 +1,6 @@
+hl.on("hyprland.start", function ()
+         hl.exec_cmd("chatterino")
+         hl.exec_cmd("waybar")
+	hl.exec_cmd("vesktop")
+	hl.exec_cmd("awww-daemon & awww img ~Pictures/zc.png")
+end)

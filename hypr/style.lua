@@ -1,10 +1,10 @@
 
 hl.config({
     general = {
-        gaps_in  = 2,
-        gaps_out = 2,
+        gaps_in  = 5,
+        gaps_out = 10,
 
-        border_size = 1,
+        border_size = 2,
 
         col = {
 active_border = { colors = {"rgb(A1A1A1)", "rgb(ECECEC)"}, agnle = 45 }, 
@@ -12,7 +12,6 @@ active_border = { colors = {"rgb(A1A1A1)", "rgb(ECECEC)"}, agnle = 45 },
        },
 
         resize_on_border = false,
-
         allow_tearing = false,
 
         layout = "dwindle",
@@ -35,7 +34,7 @@ active_border = { colors = {"rgb(A1A1A1)", "rgb(ECECEC)"}, agnle = 45 },
 
         blur = {
             enabled   = true,
-            size      = 3,
+            size      = 10,
             passes    = 1,
             vibrancy  = 0.1696,
         },
