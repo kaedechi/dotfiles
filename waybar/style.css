@@ -17,7 +17,7 @@ window#waybar {
 }
 
 #window,
-#clock {
+#clock, #cpu, #pulseaudio {
   padding: 0 10px;
 }
 
@@ -41,3 +41,5 @@ window#waybar {
 #workspaces button:hover {
   background: rgba(255, 255, 255, 0.08);
 }
+
+
