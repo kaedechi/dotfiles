@@ -80,6 +80,3 @@ hl.window_rule({
 
 	size = {806, 548},
 })
-
---hl.window_rule({ match = { float = true },           opacity = "0.5 0.5" })
-hl.window_rule({ match = { class = "kitty" },        opacity = "0.8 0.8" })
