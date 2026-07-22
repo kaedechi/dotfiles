@@ -1,45 +1,52 @@
 * {
-  border: none;
-  border-radius: 0;
-
-  font-family: "Tamzen";
-  font-size: 15px;
-
-  min-height: 0;
+    font-family: "JetBrainsMono Nerd Font", "Iosevka Nerd Font";
+    font-size: 13.5px;
 }
 
 window#waybar {
-  background: rgba(15, 15, 15, 0.55);
-  color: #e0e0e0;
-
-  border-radius: 8px;
-  margin: 6px;
-}
-
-#window,
-#clock, #cpu, #pulseaudio {
-  padding: 0 10px;
-}
-
-#workspaces {
-  padding: 0 4px;
+    background: rgba(15, 15, 20, 0.96);
+    color: #cdd6f4;
+    border-bottom: 2px solid #1e1e2e;
 }
 
 #workspaces button {
-  padding: 0 8px;
-  margin: 4px 2px;
-
-  background: transparent;
-  color: #888888;
+    padding: 2px 10px;
+    margin: 0 2px;
+    border-radius: 4px;
+    color: #D6D4F4;
 }
 
 #workspaces button.active {
-  color: #ffffff;
-
+    background: #D6D4F4;
+    color: #1e1e2e;
+    font-weight: 700;
 }
 
 #workspaces button:hover {
-  background: rgba(255, 255, 255, 0.08);
+    background: #313244;
+    color: #cdd6f4;
 }
 
+#clock {
+    color: #D6D4F4;
+    padding: 0 14px;
+}
 
+#custom-spotify {
+    color: #D6D4F4;
+    padding: 0 12px;
+}
+
+#cpu, #memory, #temperature, #pulseaudio, #network {
+    padding: 0 10px;
+}
+
+#cpu { color: #D6D4F4; }
+#memory { color: #D6D4F4; }
+#temperature { color: #D6D4F4; }
+#pulseaudio { color: #D6D4F4; }
+#network { color: #D6D4F4; }
+
+#tray {
+    padding-right: 8px;
+}

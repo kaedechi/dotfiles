@@ -1,57 +1,32 @@
 {
-  "layer": "top",
-  "position": "top",
-  "height": 28,
-  "include": [
-  "./modules/tray.jsonc"
-],
+    "layer": "top",
+    "position": "top",
+    "height": "30",
 
+    "modules-left": ["hyprland/workspaces", "clock"],
+    "modules-center": ["custom/spotify"],
+    "modules-right": ["cpu", "memory", "temperature", "pulseaudio", "network", "tray"],
 
-  "modules-left": [
-    "hyprland/window"
-  ],
-
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
-
-  "modules-right": [
-    "pulseaudio",
-    "cpu",
-    "clock",
-    "tray"
-  ],
-  "pulseaudio": {
-	"format": "{volume}% {icon}",
-	"format-bluetooth": "{volume}% {icon}",
-	"format-muted": "",
-	"format-icons": {
-		"default": ["", ""]
-	},
-	"scroll-step": 1,
-	"on-click": "pavucontrol"
+    "hyprland/workspaces": {
+        "format": "{icon}"
+    },
+"custom/spotify": {
+    "format": "  {} ",
+    "return-type": "json",
+    "exec": "playerctl metadata --format '{\"text\": \"{{artist}} - {{title}}\", \"alt\": \"{{status}}\", \"tooltip\": \"{{playerName}}\"}' 2>/dev/null",
+    "max-length": 45,
+    "interval": 2,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous"
 },
-"cpu": {
-	"interval": 10,
-	"format": "{usage}% ",
-	"max-length": 10
-},
- "clock": {
-    "format": "{:%d.%m  %H:%M}"
- },
 
-   "hyprland/window": {
-        "format": "{class}", 
-        "max-length": 20,
-        "min-length": 0,
-        "all-outputs": true
-	}
-},
-  "separate-outputs": true
-},
-  "hyprland/workspaces": {
-    "format": "{name}",
-    "on-click": "activate"
-  }
+    "clock": { "format": "{:%a %d %b %H:%M:%S}" },
 
+    "cpu": { "format": "{usage}% " },
+    "memory": { "format": "{percentage}% " },
+    "temperature": { "format": "{temperatureC}°C " },
+    "pulseaudio": { "format": "{volume}% {icon}" },
+    "network": { "format-wifi": "", "format-ethernet": "", "format-disconnected": "󰤭" }
 }
+
